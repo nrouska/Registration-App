@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+        <meta name="viewport" content="width=devicewidth,
+        initial-scale=1.0">
+        <title> {% block title %}{% endblock title %}
+        </title>
+        <style>
+        input, button, legend{
+            margin: 0.2em;
+            padding: 0.2em;
+            font-size: 1em;
+            font-family:Arial, Helvetica, sansserif;
+        }
+        form{
+            padding: 2em;
+            background-color: #F4BFBF;
+        }
+        label{
+            margin: 0.2em;
+            padding: 0.2em;
+            font-size: 0.8em;
+            font-family:Arial, Helvetica, sansserif;
+        }
+        input{
+            margin-top: 1em;
+            border: 1px solid rgb(250, 219, 215);
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        fieldset{
+        margin-top: 2em;
+        }
+        button{
+        background-color: antiquewhite;
+        }
+        </style>
+    </head>
+    <body>
+        {% block body %}
+        {% endblock body %}
+    </body>
+</html>

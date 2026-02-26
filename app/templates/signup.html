@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %} Sign up {% endblock title %}
+{% block body %}
+<h1> Welcome to signup page</h1>
+<form action='#', method='POST'>
+    <fieldset>
+        <legend>Personal info</legend>
+        <label for="name">Username</label><br>
+        <input type="text" name="name"
+        placeholder="enter your name" size="30"
+        required><br>
+        <label for="email">Email</label><br>
+        <input type="text" name="email"
+        placeholder="enter your email" size="30"
+        required><br>
+        <label
+        for="password">Password</label><br>
+        <input type="password" name="password"
+        placeholder="5 characters at least" required><br>
+        <label for="cities">City</label><br>
+        <input list="cities" name="cities"
+        placeholder="enter your city" required>
+        <datalist id="cities">
+        <option
+        value="Patras">Patras</option>
+        <option
+        value="Athens">Athens</option>
+        </datalist>
+        </div>
+    </fieldset>
+    <button>Submit</button>
+</form>
+{% endblock body %}
