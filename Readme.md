@@ -4,6 +4,8 @@ Flask-based website developed by Natalia Rouska. Includes a form for user regist
 
 Deployed on Heroku for public access
 
+![alt text](image.png)
+
 # Set-up
 1. In VScode powershell
 2. `python -m venv virtualenv`
